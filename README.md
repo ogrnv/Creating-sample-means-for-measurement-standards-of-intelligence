@@ -1,0 +1,1 @@
+# Creating-sample-means-for-measurement-standards-of-intelligence
