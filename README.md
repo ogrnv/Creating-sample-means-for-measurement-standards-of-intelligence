@@ -14,7 +14,7 @@ This repository provides tools for creating the sample means: a "standard" and a
 Both were developed with gcc version 12.2.0 Linux.
 
 The "standard" program generates tests - samples of population of some complexity which is determined by 3, 4, 5, 6 arguments(see below). The program has a Monte Carlo solver (MCs) of the test tasks.
-As result, the "standard" creates a file of 4-byte floating point values ​​- each of which is a number of moves made by the MCs in each round and prints one step means.+
+As result, the "standard" creates a file of 4-byte floating point values ​​- each of which is a number of moves made by the MCs in each round and prints one step means.
 These means ​​are calculated as M/(rounds*stp);
 where M is the number of moves made by MCs in a test;
 rounds -  the number rounds in one test;
