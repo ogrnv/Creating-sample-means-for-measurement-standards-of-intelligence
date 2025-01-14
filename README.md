@@ -1,8 +1,6 @@
 
 According to https://en.wikipedia.org/wiki/Repeatability#Psychological_testing:
-
-    When retested, testees may remember their answers, which could affect answers on the second administration.
-
+When retested, testees may remember their answers, which could affect answers on the second administration.
 The effect does not allow any static intelligence test to be a measurement standard of intelligence.
 Even a single use of such a test is not reliable because it is not known whether a subject has taken the test in the past.
 Two other reasons:
