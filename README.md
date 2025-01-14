@@ -1,27 +1,40 @@
 
 According to https://en.wikipedia.org/wiki/Repeatability#Psychological_testing:
+
 When retested, testees may remember their answers, which could affect answers on the second administration.
+
 The effect does not allow any static intelligence test to be a measurement standard of intelligence.
+
 Even a single use of such a test is not reliable because it is not known whether a subject has taken the test in the past.
+
 Two other reasons:
  - change in subject's intelligence over time and
  - training
+
 also do not allow static IQ tests to become standards.
 
 But a population of randomly generated tests is suitable to be a measurement standard of intelligence, provided that tests scores (from an AI or an intelligent being) are normally distributed with small standard deviations from the sample means(details below).
 
 A description of the used standards of intelligence is FIRST-NB.html from https://github.com/ogrnv/random-intelligence-tests
+
 Further, instead of the word "game", the words "round of test" will be used.  
 
 This repository provides tools for creating the sample means: a "standard" and a "means" programs.
+
 Both were developed with gcc version 12.2.0 Linux.
 
 The "standard" program generates tests - samples of population of some complexity which is determined by 3, 4, 5, 6 arguments(see below). The program has a Monte Carlo solver (MCs) of the test tasks.
+
 As result, the "standard" creates a file of 4-byte floating point values ​​- each of which is a number of moves made by the MCs in each round and prints one step means.
+
 These means ​​are calculated as M/(rounds*stp);
+
 where M is the number of moves made by MCs in a test;
+
 rounds -  the number of rounds in one test;
+
 stp - the number of steps in every round.
+
 Another way to get the similar means is provided by "means" program.
 
 The "standard" gets the seven arguments:
@@ -38,10 +51,13 @@ The "means" gets the four arguments:
 2) the number of rounds in one test, it can be different from the one given to "standard";
 3) steps in one round, it should be the same as given to "standard";
 4) the name of input file up to 300 chars.
+
 The input file can be a file from the "standard" or a concatenation of several files obtained with the same 3, 4, 5, 6 arguments.
+
 The "means" writes the means, similar to those printed by the "standard", - (4-bytes floating point values) in an output file.
 
 Having the means of the tests it is possible to get statistical properties of distribution of the means.
+
 The intelligence score from the test results can be calculated as 1000/mean
 
 R examples:
