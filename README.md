@@ -8,9 +8,8 @@ Even a single use of such a test is not reliable because it is not known whether
 
 Two other reasons:
  - change in subject's intelligence over time and
- - training
-
-also do not allow static IQ tests to become standards.
+ - training,  combined with the first,
+combined with the first, further reduce the reliability of the measurements.
 
 But a population of randomly generated tests is suitable to be a measurement standard of intelligence, provided that tests scores (from an AI or an intelligent being) are normally distributed with small standard deviations from the sample means(details below).
 
@@ -20,7 +19,7 @@ Further, instead of the word "game", the words "round of test" will be used.
 This repository provides tools for creating the sample means: a "standard" and a "means" programs.  
 Both were developed with gcc version 12.2.0 Linux.
 
-The "standard" program generates tests - samples of population of some complexity which is determined by 3, 4, 5, 6 arguments(see below). The program has a Monte Carlo solver (MCs) of the test tasks.  
+The "standard" program generates tests - a sample of population of some complexity which is determined by 3, 4, 5, 6 arguments(see below). The program has a Monte Carlo solver (MCs) of the test tasks.  
 As result, the "standard" creates a file of 4-byte floating point values ​​- each of which is a number of moves made by the MCs in each round and prints one step means.
 
 These means ​​are calculated as M/(rounds*stp);  
