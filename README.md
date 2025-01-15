@@ -10,7 +10,7 @@ Two other reasons:
  - change in subject's intelligence over time and
  - training,
 
-combined with the first, further reduce the reliability of the measurements.
+combined with the first, make intelligence measurements even more fictitious.
 
 But a population of randomly generated tests is suitable to be a measurement standard of intelligence, provided that tests scores (from an AI or an intelligent being) are normally distributed with small standard deviations from the sample means(details below).
 
