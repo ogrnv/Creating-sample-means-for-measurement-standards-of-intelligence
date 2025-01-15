@@ -8,7 +8,8 @@ Even a single use of such a test is not reliable because it is not known whether
 
 Two other reasons:
  - change in subject's intelligence over time and
- - training,  combined with the first,
+ - training,
+
 combined with the first, further reduce the reliability of the measurements.
 
 But a population of randomly generated tests is suitable to be a measurement standard of intelligence, provided that tests scores (from an AI or an intelligent being) are normally distributed with small standard deviations from the sample means(details below).
