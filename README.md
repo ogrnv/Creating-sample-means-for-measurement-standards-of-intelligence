@@ -3,14 +3,8 @@ According to https://en.wikipedia.org/wiki/Repeatability#Psychological_testing:
 
 When retested, testees may remember their answers, which could affect answers on the second administration.
 
-The effect does not allow any static intelligence test to be a measurement standard of intelligence.  
-Even a single use of such a test is not reliable because it is not known whether a subject has taken the test in the past.
-
-Two other reasons:
- - change in subject's intelligence over time and
- - training,
-
-combined with the first, make intelligence measurements even more fictitious.
+The effect does not allow any static intelligence test to be a measurement standard of intelligence, since repeated measurements using such a standard will give erroneous results.  
+Which also makes it impossible to find the average and maximum values ​​of a subject's intelligence.
 
 But a population of randomly generated tests is suitable to be a measurement standard of intelligence, provided that tests scores (from an AI or an intelligent being) are normally distributed with small standard deviations from the sample means(details below).
 
@@ -51,7 +45,7 @@ The "means" writes the means, similar to those printed by the "standard", - (4-b
 
 Having the means of the tests it is possible to get statistical properties of distribution of the means, for example, compute confidence interval for the population mean.
 
-The intelligence score from the test results can be calculated as 1000/mean
+The intelligence score from the test results can be calculated as 1000/(one step mean)
 
 R examples:
 
