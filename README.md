@@ -6,7 +6,7 @@ When retested, testees may remember their answers, which could affect answers on
 The effect does not allow any static intelligence test to be a measurement standard of intelligence, since repeated measurements using such a standard will give erroneous results.  
 Which also makes it impossible to find the average and maximum values ​​of a subject's intelligence.
 
-But a population of randomly generated tests is suitable to be a measurement standard of intelligence, provided that tests scores (from an AI or an intelligent being) are normally distributed with small standard deviations from the sample means(details below).
+Only a population of tests with randomly generated tasks is suitable to be a measurement standard of intelligence, provided that tests scores (from an AI or an intelligent being) are normally distributed with small standard deviations from the sample means(details below).
 
 A description of the used standards of intelligence is FIRST-NB.html from https://github.com/ogrnv/random-intelligence-tests  
 Further, instead of the word "game", the words "round of test" will be used.  
