@@ -61,7 +61,7 @@ ci[1]
 ci[2]  
 ci[2]/ci[1]
 
-	Shapiro-Wilk normality test
+Shapiro-Wilk normality test
 
 data:  v
 W = 0.99946, p-value = 0.8704
@@ -83,7 +83,7 @@ ci[1]
 ci[2]  
 ci[2]/ci[1]
 
-	Shapiro-Wilk normality test
+Shapiro-Wilk normality test
 
 data:  v
 W = 0.99953, p-value = 0.9346
@@ -104,7 +104,7 @@ ci[1]
 ci[2]  
 ci[2]/ci[1]
 
-	Shapiro-Wilk normality test
+Shapiro-Wilk normality test
 
 data:  v
 W = 0.9918, p-value = 0.8067
@@ -113,3 +113,64 @@ W = 0.9918, p-value = 0.8067
 [1] 5139.403  
 [1] 1.148476  
 
+**Using the Central Limit Theorem to derive more precise standards for measuring intelligence**
+
+> con=file("means_6000t_1r_1s_raw_1x6000_1-8x8-7-59_1790916452", "rb");  
+v<-c(readBin(con,"double",2000,size=4))  
+shapiro.test (v)  
+par(mfrow=c(1,1))  
+d <- density(v)  
+plot(d)  
+rez <- t.test(v, conf.level=0.9999)  
+ci <- rez$conf.int  
+ci[1]  
+ci[2]  
+(ci[1]+ci[2])/2  
+ci[2]/ci[1]  
+ Shapiro-Wilk normality test  
+data:  v  
+W = 0.75314, p-value < 2.2e-16  
+[1] 1197.289  
+[1] 1472.482  
+[1] 1334.886  
+[1] 1.229847  
+>  
+~~~  
+clt <- function(x, n, sz) {  
+sms <- c()  
+for (i in 1:n) {  
+sms[i] <- mean(sample(x, sz, replace = TRUE))  
+}  
+par(mfrow = c(1, 1))  
+plot(density(sms))  
+rez <- t.test(sms, conf.level = 0.9999)  
+ci <- rez$conf.int  
+list(  
+mean = mean(sms),  
+sd = sd(sms),  
+shapiro = shapiro.test(sms),  
+ci = ci,  
+ci_ratio = ci[2] / ci[1],  
+ci_midpoint = mean(ci)  
+)  
+}  
+~~~  
+> x <- v  
+> clt(x, 5000, 10000)  
+$mean  
+[1] 1335.166  
+$sd  
+[1] 15.60912  
+$shapiro  
+ Shapiro-Wilk normality test  
+data:  sms  
+W = 0.99968, p-value = 0.6583  
+$ci  
+[1] 1334.307 1336.026  
+attr(,"conf.level")  
+[1] 0.9999  
+$ci_ratio  
+[1] 1.001288  
+$ci_midpoint  
+[1] 1335.166  
+  
