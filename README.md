@@ -113,10 +113,10 @@ W = 0.9918, p-value = 0.8067
 [1] 5139.403  
 [1] 1.148476  
 
-**Using the Central Limit Theorem to derive more precise standards for measuring intelligence**
+Using the Central Limit Theorem to derive more precise standards for measuring intelligence
 
 > con=file("means_6000t_1r_1s_raw_1x6000_1-8x8-7-59_1790916452", "rb");  
-v<-c(readBin(con,"double",2000,size=4))  
+v<-c(readBin(con,"double",5000,size=4))  
 shapiro.test (v)  
 par(mfrow=c(1,1))  
 d <- density(v)  
@@ -134,7 +134,7 @@ W = 0.75314, p-value < 2.2e-16
 [1] 1472.482  
 [1] 1334.886  
 [1] 1.229847  
->  
+ 
 ~~~  
 clt <- function(x, n, sz) {  
 sms <- c()  
@@ -158,19 +158,19 @@ ci_midpoint = mean(ci)
 > x <- v  
 > clt(x, 5000, 10000)  
 $mean  
-[1] 1335.166  
+[1] 1389.302  
 $sd  
-[1] 15.60912  
+[1] 15.95528  
 $shapiro  
- Shapiro-Wilk normality test  
+Shapiro-Wilk normality test  
 data:  sms  
-W = 0.99968, p-value = 0.6583  
+W = 0.99973, p-value = 0.7954  
 $ci  
-[1] 1334.307 1336.026  
+[1] 1388.423 1390.181  
 attr(,"conf.level")  
 [1] 0.9999  
 $ci_ratio  
-[1] 1.001288  
+[1] 1.001266  
 $ci_midpoint  
-[1] 1335.166  
+[1] 1389.302  
   
